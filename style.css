@@ -1,0 +1,109 @@
+body{
+    background-color: red;
+    overflow: hidden;
+    background: linear-gradient(45deg,#0A6EBD,#5A96E3);
+}
+.container{
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+.watch-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.watch{
+    width: 500px;
+    height: 500px;
+    background-color: #171010;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    animation: rotate 5s linear infinite;
+    box-shadow: 0px 0px 40px black;
+    z-index: 99;
+
+}
+.pointer{
+    width: 50px;
+    height: 50px;
+    background-color: #16FF00;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+}
+.nail{
+    height: 250px ;
+    width: 10px;
+    /* border: 2px solid; */
+    position: absolute;
+    background-color: #00DFA2;
+    top: 0px;
+    left: 50%;
+    border-radius: 40px;
+    transform: translateX(-50%);
+    
+}
+.watch-wrapper button{
+    position: absolute;
+    width: 150px;
+    cursor: pointer;
+  height: 100px;
+  background-color: #27374D;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
+  transition: all .099s ease-out;
+}
+.reset_btn{
+    top: 0px;
+    left: 0px;
+    border-radius: 30px;
+    width: 200px;
+    transform: rotate(50deg) ; 
+}
+
+.start_btn{
+    top: -42px;
+    left: 34%;
+    /* transform: translateX(-50%); */
+    border-radius: 100px;
+}
+.start_btn:active{
+    transform: translatey(30px);
+}
+.stop_btn{
+    top: 0px;
+    width: 200px;
+    border-radius: 30px;
+    transform: rotate(301deg);
+    left: 331px;
+}
+
+.stop_btn:active{
+    transform: translate(-38px,52px);
+}
+
+.reset_btn:active{
+    transform: translate(40px,50px);
+}
+
+.time-box{
+    width: 400px;
+    height: 200px;
+    background: white;
+    opacity: .6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    border-radius: 20px;
+}
+@keyframes rotate {
+    100%{transform: rotate(360deg);}
+}
