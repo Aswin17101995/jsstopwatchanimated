@@ -16,6 +16,9 @@ body {
     margin: 0 auto;
     position: relative;
 }
+.container .heading{
+    text-align: center;
+}
 .watch-wrapper {
     position: absolute;
     top: 50%;
@@ -134,4 +137,36 @@ all button is absolute position and arranged properly  */
 .time-box div {
     min-width: 100px;
     margin: auto;
+}
+
+@media (min-width:1px) and (max-width:900px){
+    .watch{
+        width: 300px;
+        height: 300px;
+    }
+    .watch-wrapper button{
+        width: 70px;
+        height: 45px;
+    }
+    .time-box{
+        height: 100px;
+        width: 257px;
+        font-size: 45px;
+    }
+    .time-box div{
+        min-width: 45px;
+    }
+    .pointer{
+        width: 20px;
+        height: 20px;
+        top: -10px;
+    }
+    .nail{
+        height: 150px;
+        width: 7px;
+    }
+    .start_btn{
+        top:-42px;
+        left:38%;
+    }
 }
