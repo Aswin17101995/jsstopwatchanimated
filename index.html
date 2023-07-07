@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="watch-wrapper">
-            <div class="watch">
+            <div class="watch" id="watchi">
                 <div class="pointer">
         
                 </div>
@@ -17,17 +17,15 @@
         
                 </div>
             </div>
-            <button class="reset_btn">
-
+            <button class="reset_btn" onclick="reset()">
+               Reset
             </button>
-            <button class="start_btn">
+            <button class="start_btn" onclick="starttimer()">
+                Start/Stop
+            </button>   
 
-            </button>
-            <button class ="stop_btn">
-
-            </button>
             <div class="time-box">
-                
+               <div id="mins">00</div>:<div id="sec">00</div>:<div id="msec">00</div>
             </div>
         </div>
     </div>
